@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estetika Urbana</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- CDN FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="superior">
+    </div>
+    <header id="arriba">
+    </header>
+
+<!-- Muestro el array de objetos del tratamiento con Vue.JS -->
+    <main id="app">
+        <div class="contenedor">
+            <div v-for="tratamiento of tratamientos" :class="'tarjeta'"> 
+                <img v-bind:src="tratamiento.imagen" v-bind:alt="'text'">
+                <b>{{tratamiento.nombre}}</b>
+                {{tratamiento.descripcion}}               
+            </div>
+        </div>
+
+    </main>
+
+<footer id="pie" class="pie">
+</footer>
+<!-- Archivo JS de Datos -->
+<script src="js/datos.js"></script>
+<!-- Archivo JS Vainilla  -->
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
+
