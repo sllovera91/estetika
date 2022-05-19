@@ -13,10 +13,15 @@ html {
     background-color: whitesmoke;
     font-family: 'Bree Serif', serif;
     font-family: 'Montserrat', sans-serif;
+    color:#5e5e5e;
 }
 
 a {
     text-decoration: none;
+}
+
+h2 {
+    color:#6f6f6f;
 }
 
 .logo {
