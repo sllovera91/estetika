@@ -267,6 +267,7 @@ input::-webkit-inner-spin-button {
     margin: 1rem;
     resize: none;
     padding: 0.5rem 0.5rem;
+    border: 1px solid #57bc90;
 
 }
 
