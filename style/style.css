@@ -212,6 +212,15 @@ h3 {
     background-color: whitesmoke;
     font-family: 'Bree Serif', serif;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.contacto p h2{
+    font-size: 1rem;
+    background-color: whitesmoke;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0.5rem 0.5rem;
 }
 
 .contenedor {
@@ -237,6 +246,28 @@ border: 0.5px solid #57bc90;
     max-width: 100%;
     border-radius: 0.7rem;
     opacity: 0.8;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.campos form{
+    display: flex;
+    flex-direction: column;
+}
+
+.campos input,textarea {
+    margin: 1rem;
+    resize: none;
+    padding: 0.5rem 0.5rem;
+
+}
+
+.campos ::placeholder {
+    color:#6f6f6f;
 }
 
 /* MEDIA QUERY */
